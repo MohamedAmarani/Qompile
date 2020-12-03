@@ -9,6 +9,7 @@ public class CreateMap : MonoBehaviour
     private float lastX = 9, lastZ = 2, y = 10.5f;
     private float blastX = 9, blastZ = -6;
     private float size = 5.001f;
+    private float margin = 0.01f;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,13 +36,14 @@ public class CreateMap : MonoBehaviour
             GameObject obj = (GameObject)Instantiate(whiteCube, new Vector3(blastX += size, y, blastZ), transform.rotation);
             obj.transform.parent = gameObject.transform;
         }
-        for (int i = 0; i < 5; ++i)
+
+        for (int i = 0; i < 6; ++i)
         {
             GameObject obj = (GameObject)Instantiate(whiteCube, new Vector3(lastX, y, lastZ -= size), transform.rotation);
             obj.transform.parent = gameObject.transform;
         }
-        //bx
-        for (int i = 0; i < 5; ++i)
+        //by
+        for (int i = 0; i < 6; ++i)
         {
             GameObject obj = (GameObject)Instantiate(whiteCube, new Vector3(blastX, y, blastZ += size), transform.rotation);
             obj.transform.parent = gameObject.transform;
