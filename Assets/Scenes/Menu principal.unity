@@ -990,6 +990,17 @@ MonoBehaviour:
           m_StringArgument: All escenas
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1124827287}
+        m_MethodName: PlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1147672418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1720,6 +1731,118 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1889180610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1889180612}
+  - component: {fileID: 1889180611}
+  m_Layer: 0
+  m_Name: AudioManeger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1889180611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889180610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23e0ea7b5eb2a7a4488753f17615dc03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: mainMenu
+    clip: {fileID: 8300000, guid: c3f3496744f010f418b7d216673712a7, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    dontRepeat: 1
+    source: {fileID: 0}
+  - name: button
+    clip: {fileID: 8300000, guid: 809d07306f64c4b4993b0bb41b313a37, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    dontRepeat: 0
+    source: {fileID: 0}
+  - name: game
+    clip: {fileID: 8300000, guid: 19c200cdd78283c4bafbd58207afb253, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    dontRepeat: 1
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    dontRepeat: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    dontRepeat: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    dontRepeat: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    volumeVariance: 0
+    pitch: 0
+    pitchVariance: 0
+    loop: 0
+    dontRepeat: 0
+    source: {fileID: 0}
+--- !u!224 &1889180612
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889180610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 400, y: 250}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2018161157
 GameObject:
   m_ObjectHideFlags: 0

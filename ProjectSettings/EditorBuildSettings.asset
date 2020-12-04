@@ -44,5 +44,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instruccion.unity
     guid: 4aadac29aeca9314b9a8c186458632e8
+  - enabled: 1
+    path: Assets/Scenes/Escena6.unity
+    guid: 5a648bda6bdf3604b967968df08bdcc6
   m_configObjects: {}
 >>>>>>> menu principal diseño, cuando pulsa play, va a una escena nueva
