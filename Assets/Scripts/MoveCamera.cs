@@ -22,8 +22,8 @@ public class MoveCamera : MonoBehaviour
             if (transform.position.x != 92)
                 transform.Translate(-1, 0, 0.8f);
 
-        if (ball.transform.position.x < 300 && ball.transform.position.x < 300 && ball.transform.position.z < -115)
-            if (transform.position.y > 135 || transform.position.z > -160)
-                transform.Translate(0, -1, -1);
+        if (ball.transform.position.z < -100 && ball.transform.position.x < 300 && ball.transform.position.x > 200)
+            if (transform.position.y > 133 || transform.position.z > -156)
+                transform.Translate(0, -1, 0.7f);
     }
 }

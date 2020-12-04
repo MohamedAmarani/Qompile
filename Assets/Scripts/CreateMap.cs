@@ -9,7 +9,6 @@ public class CreateMap : MonoBehaviour
     private float lastX = 9, lastZ = 2, y = 10.5f;
     private float blastX = 9, blastZ = -6;
     private float size = 5.001f;
-    private float margin = 0.01f;
     // Start is called before the first frame update
     void Start()
     {

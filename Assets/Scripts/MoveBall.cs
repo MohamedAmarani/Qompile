@@ -8,6 +8,8 @@ public class MoveBall : MonoBehaviour
     private float xSpeed = 20f, zSpeed = 20f;
     public Transform explosion;
     private int change = -1;
+    public GameObject exploisionPrefab;
+    public GameObject cambioExploisionPrefab;
     private Vector3 impulse = new Vector3(20.0f, 0.0f, 20.0f);
     // Start is called before the first frame update
     void Start()
@@ -25,14 +27,17 @@ public class MoveBall : MonoBehaviour
           {
             pressedSpace = true;
             print("space");
-         }
+            zSpeed *= (-1);
+            GameObject p = Instantiate(cambioExploisionPrefab, gameObject.transform.position, Quaternion.identity);
+        }
           else if (!Input.GetKey(KeyCode.Space))
             pressedSpace = false;
     }
 
     void OnCollisionEnter(Collision collision)
     {
-
+        GameObject p = Instantiate(exploisionPrefab, gameObject.transform.position, Quaternion.identity);
+        p.transform.localScale = new Vector3(20, 20, 20);
         Debug.Log(ReturnDirection(collision.gameObject, this.gameObject));
     }
 
