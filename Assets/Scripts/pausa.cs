@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class pausa : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public AudioClip buttonSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,11 @@ public class pausa : MonoBehaviour
     {
         SceneManager.LoadScene(nom);
         Time.timeScale = 1;
+    }
+
+    public void Button()
+    {
+        AudioSource.PlayClipAtPoint(buttonSound, new Vector3(0.0f, 0.0f, -10.0f));
     }
 
 }
