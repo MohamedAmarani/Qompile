@@ -9,8 +9,8 @@ public class AllEscenaStart : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.instance.Stop("mainMenu");
-        AudioManager.instance.Play("game");
+        //AudioManager.instance.Stop("mainMenu");
+       // AudioManager.instance.Play("game");
     }
 
     public void CarregaEscena(string nom)

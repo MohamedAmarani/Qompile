@@ -6,11 +6,13 @@ using UnityEngine.UI;
 
 public class start : MonoBehaviour
 {
+
+    public AudioClip buttonSound;
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.instance.Stop("game");
-        AudioManager.instance.Play("mainMenu");
+        //AudioManager.instance.Stop("game");
+        //AudioManager.instance.Play("mainMenu");
 
     }
 
@@ -20,9 +22,9 @@ public class start : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void PlayButton()
+    public void Button()
     {
-        AudioManager.instance.Play("button");
+        AudioSource.PlayClipAtPoint(buttonSound, new Vector3(0.0f, 0.0f, -10.0f));
     }
 
 }

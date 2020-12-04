@@ -215,6 +215,17 @@ MonoBehaviour:
           m_StringArgument: Escena1
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1528078663}
+        m_MethodName: Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &20604953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,7 +462,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1528078663}
         m_MethodName: CarregaEscena
         m_Mode: 5
         m_Arguments:
@@ -460,6 +471,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Menu principal
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1528078663}
+        m_MethodName: Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &471631439
@@ -669,6 +691,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Escena2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1528078663}
+        m_MethodName: Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &681788450
@@ -977,6 +1010,17 @@ MonoBehaviour:
           m_StringArgument: Escena3
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1528078663}
+        m_MethodName: Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1121969674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1223,6 +1267,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Escena6
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1528078663}
+        m_MethodName: Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1154798513
@@ -1673,9 +1728,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1528078658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8408bd72b643edd479d435b0737f6823, type: 3}
+  m_Script: {fileID: 11500000, guid: a5463d839c445ec4faf05f1f78b34b92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonSound: {fileID: 8300000, guid: 809d07306f64c4b4993b0bb41b313a37, type: 3}
 --- !u!1 &1558272622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,6 +1824,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Escena4
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1528078663}
+        m_MethodName: Button
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1558272625
