@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 5fae8af68490b684c9920bb8be270098
+guid: af02e279ee1cb2c45beb185b9aa61afd
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - redCube: {fileID: 1797519916836560732, guid: b2521baa6d5f4db45adb7da55ed1b3d4,
+      type: 3}
+  - blueCube: {instanceID: 0}
+  - yellowCube: {instanceID: 0}
+  - greenCube: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
