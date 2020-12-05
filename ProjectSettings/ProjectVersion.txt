@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 m_EditorVersion: 2019.4.15f1
 m_EditorVersionWithRevision: 2019.4.15f1 (fbf367ac14e9)
 =======
@@ -10,3 +11,7 @@ m_EditorVersionWithRevision: 2019.4.16f1 (e05b6e02d63e)
 m_EditorVersion: 2019.4.16f1
 m_EditorVersionWithRevision: 2019.4.16f1 (e05b6e02d63e)
 >>>>>>> Test push 2
+=======
+m_EditorVersion: 2019.4.15f1
+m_EditorVersionWithRevision: 2019.4.15f1 (fbf367ac14e9)
+>>>>>>> minor changes
