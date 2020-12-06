@@ -59,8 +59,8 @@ public class MoveBall : MonoBehaviour
                 Vector3 MyNormal = MyRayHit.normal;
                 MyNormal = MyRayHit.transform.TransformDirection(MyNormal);
 
-                if (MyNormal == MyRayHit.transform.up) { hitDirection = HitDirection.Top; }
-                if (MyNormal == -MyRayHit.transform.up) { hitDirection = HitDirection.Bottom; }
+                if (MyNormal == MyRayHit.transform.up) { hitDirection = HitDirection.Top; zSpeed = 20; }
+                if (MyNormal == -MyRayHit.transform.up) { hitDirection = HitDirection.Bottom; zSpeed = -20; }
                 if (MyNormal == MyRayHit.transform.forward) { hitDirection = HitDirection.Forward; zSpeed = 20; }
                 if (MyNormal == -MyRayHit.transform.forward) { hitDirection = HitDirection.Back; zSpeed = -20; }
                 if (MyNormal == MyRayHit.transform.right) { hitDirection = HitDirection.Right; xSpeed = 20; }
