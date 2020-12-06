@@ -6,15 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Scenes: []
 =======
 =======
 >>>>>>> Merge mapa con menus y sonidos
+=======
+>>>>>>> 71217d147b3f9754786142a9a3e45991a2c36a0f
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Menu principal.unity
     guid: da779ea35a0be3f4b8718308c46da30e
   - enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
     path: Assets/Scenes/Pausa.unity
     guid: be52e465da88a5f4191aab14f126896e
@@ -23,13 +27,18 @@ EditorBuildSettings:
     guid: 783869633ac52ea41911cab09b6e8eb4
   - enabled: 1
 =======
+=======
+>>>>>>> 71217d147b3f9754786142a9a3e45991a2c36a0f
     path: Assets/Scenes/All escenas.unity
     guid: 783869633ac52ea41911cab09b6e8eb4
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 0b9de02e00e7596449928742334eaba8
   - enabled: 1
+<<<<<<< HEAD
 >>>>>>> Merge mapa con menus y sonidos
+=======
+>>>>>>> 71217d147b3f9754786142a9a3e45991a2c36a0f
     path: Assets/Scenes/Escena1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
@@ -44,14 +53,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escena5.unity
 <<<<<<< HEAD
+<<<<<<< HEAD
     guid: d8a4cc4d76166134a89fbfe2010933e2
 =======
     guid: 5a648bda6bdf3604b967968df08bdcc6
 >>>>>>> Merge mapa con menus y sonidos
+=======
+    guid: 5a648bda6bdf3604b967968df08bdcc6
+>>>>>>> 71217d147b3f9754786142a9a3e45991a2c36a0f
   - enabled: 1
     path: Assets/Scenes/Game over.unity
     guid: 67b9a9d1e8441444dbded364bca4da38
   - enabled: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
     path: Assets/Scenes/You win.unity
     guid: 34ca1369a9526064194006a5b4da0ced
@@ -67,6 +81,8 @@ EditorBuildSettings:
   m_configObjects: {}
 >>>>>>> menu principal diseño, cuando pulsa play, va a una escena nueva
 =======
+=======
+>>>>>>> 71217d147b3f9754786142a9a3e45991a2c36a0f
     path: Assets/Scenes/Instruccion.unity
     guid: 4aadac29aeca9314b9a8c186458632e8
   - enabled: 1
@@ -76,4 +92,7 @@ EditorBuildSettings:
     path: Assets/Scenes/You win.unity
     guid: 34ca1369a9526064194006a5b4da0ced
   m_configObjects: {}
+<<<<<<< HEAD
 >>>>>>> Merge mapa con menus y sonidos
+=======
+>>>>>>> 71217d147b3f9754786142a9a3e45991a2c36a0f
