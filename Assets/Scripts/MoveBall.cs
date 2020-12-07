@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoveBall : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class MoveBall : MonoBehaviour
     public GameObject exploisionPrefab;
     public GameObject cambioExploisionPrefab;
     private Vector3 impulse = new Vector3(20.0f, 0.0f, 20.0f);
+    private bool godMode = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +35,11 @@ public class MoveBall : MonoBehaviour
         }
           else if (!Input.GetKey(KeyCode.Space))
             pressedSpace = false;
+
+        if (Input.GetKeyDown(KeyCode.G) && !godMode)
+        {
+            godMode = true;
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -39,6 +47,16 @@ public class MoveBall : MonoBehaviour
         GameObject p = Instantiate(exploisionPrefab, gameObject.transform.position, Quaternion.identity);
         p.transform.localScale = new Vector3(20, 20, 20);
         Debug.Log(ReturnDirection(collision.gameObject, this.gameObject));
+        if(collision.gameObject.tag == "danger")
+        {
+            if(!godMode)
+            {
+                Destroy(gameObject);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                Time.timeScale = 1;
+            }
+
+        }
     }
 
     private enum HitDirection { None, Top, Bottom, Forward, Back, Left, Right }
