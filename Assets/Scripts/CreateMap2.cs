@@ -2647,8 +2647,8 @@ public class CreateMap2 : MonoBehaviour
                 obj.transform.parent = gameObject.transform;
             }
         }
-
         lastZ = aux;
+
         lastX -= 15.0f;
         lastX += 2.5f;
         for (int i = 0; i < 4; ++i)
@@ -2671,7 +2671,47 @@ public class CreateMap2 : MonoBehaviour
         }
         lastX -= 2.5f;
 
-        lastZ += 65.0f;
+        for (int i = 0; i < 28; ++i)
+        {
+            GameObject obj;
+            int b = Random.Range(1, 6);
+            for (int j = 0; j < b; ++j)
+            {
+                int a = Random.Range(0, 4);
+                if (a == 0)
+                    obj = (GameObject)Instantiate(redCube, new Vector3(lastX, y + j * 2.4f, j == 0 ? lastZ += size : lastZ), transform.rotation * Quaternion.Euler(90f, 0, 0));
+                else if (a == 1)
+                    obj = (GameObject)Instantiate(blueCube, new Vector3(lastX, y + j * 2.4f, j == 0 ? lastZ += size : lastZ), transform.rotation * Quaternion.Euler(90f, 0, 0));
+                else if (a == 2)
+                    obj = (GameObject)Instantiate(yellowCube, new Vector3(lastX, y + j * 2.4f, j == 0 ? lastZ += size : lastZ), transform.rotation * Quaternion.Euler(90f, 0, 0));
+                else
+                    obj = (GameObject)Instantiate(greenCube, new Vector3(lastX, y + j * 2.4f, j == 0 ? lastZ += size : lastZ), transform.rotation * Quaternion.Euler(90f, 0, 0));
+                obj.transform.parent = gameObject.transform;
+            }
+        }
+
+        aux = lastX;
+        for (int i = 0; i < 1; ++i)
+        {
+            GameObject obj;
+            int b = Random.Range(1, 6);
+            for (int j = 0; j < b; ++j)
+            {
+                int a = Random.Range(0, 4);
+                if (a == 0)
+                    obj = (GameObject)Instantiate(redCube, new Vector3(j == 0 ? lastX += size : lastX, y + j * 2.4f, lastZ), transform.rotation);
+                else if (a == 1)
+                    obj = (GameObject)Instantiate(blueCube, new Vector3(j == 0 ? lastX += size : lastX, y + j * 2.4f, lastZ), transform.rotation);
+                else if (a == 2)
+                    obj = (GameObject)Instantiate(yellowCube, new Vector3(j == 0 ? lastX += size : lastX, y + j * 2.4f, lastZ), transform.rotation);
+                else
+                    obj = (GameObject)Instantiate(greenCube, new Vector3(j == 0 ? lastX += size : lastX, y + j * 2.4f, lastZ), transform.rotation);
+                obj.transform.parent = gameObject.transform;
+            }
+        }
+        lastX = aux;
+
+        lastZ -= 75.0f;
         for (int i = 0; i < 21; ++i)
         {
             GameObject obj;
