@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CreateMap : MonoBehaviour
+public class CreateMap1 : MonoBehaviour
 {
     public GameObject redCube;
     public GameObject blueCube;
     public GameObject yellowCube;
     public GameObject greenCube;
     public GameObject groundCube;
-    private float lastX = 9, lastZ = 2, y = 10.5f;
+    private float lastX = 9, lastZ = 2, y = 9.28f;
     private float blastX = 9, blastZ = -6;
     private float size = 5.001f;
     // Start is called before the first frame update
