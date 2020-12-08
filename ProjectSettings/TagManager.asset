@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - danger
+  - paddle
   layers:
   - Default
   - TransparentFX

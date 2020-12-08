@@ -15,7 +15,7 @@ public class PlayerDie : MonoBehaviour
     void Update()
     {
         bool encuentra = transform.Find("Ball");
-        Debug.Log(encuentra);
+        //Debug.Log(encuentra);
         if (encuentra == false)
         {
             Invoke("VolverCarregaEscena", 5f);
