@@ -14,6 +14,9 @@ public class MoveBall : MonoBehaviour
     private Vector3 impulse = new Vector3(20.0f, 0.0f, 20.0f);
     private bool godMode = false;
     public ParticleSystem die;
+    public AudioClip wallSound;
+    public AudioClip paddleSound;
+    public AudioClip dieSound;
 
     // Start is called before the first frame update
     void Start()
@@ -48,10 +51,17 @@ public class MoveBall : MonoBehaviour
         GameObject p = Instantiate(exploisionPrefab, gameObject.transform.position, Quaternion.identity);
         p.transform.localScale = new Vector3(20, 20, 20);
         Debug.Log(ReturnDirection(collision.gameObject, this.gameObject));
-        if(collision.gameObject.tag == "danger")
+        if (collision.gameObject.tag != "danger" && collision.gameObject.tag != "paddle")
+            AudioSource.PlayClipAtPoint(wallSound, new Vector3(92f, 105f, -1f), 3.0f);
+
+        if(collision.gameObject.tag == "paddle")
+            AudioSource.PlayClipAtPoint(paddleSound, new Vector3(92f, 105f, -1f), 7.0f);
+
+        if (collision.gameObject.tag == "danger")
         {
             if(!godMode)
             {
+                AudioSource.PlayClipAtPoint(dieSound, new Vector3(92f, 105f, -1f), 3.0f);
                 die.Emit(42);
                 die.transform.parent = null;
                 Destroy(gameObject);

@@ -37,7 +37,7 @@ public class pausa : MonoBehaviour
 
     public void Button()
     {
-        AudioSource.PlayClipAtPoint(buttonSound, new Vector3(0.0f, 0.0f, -10.0f));
+        AudioSource.PlayClipAtPoint(buttonSound, new Vector3(92f, 105f, -1f));
     }
 
 }
