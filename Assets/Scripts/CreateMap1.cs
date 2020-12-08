@@ -9,7 +9,7 @@ public class CreateMap1 : MonoBehaviour
     public GameObject yellowCube;
     public GameObject greenCube;
     public GameObject groundCube;
-    private float lastX = 9, lastZ = 2, y = 9.28f;
+    private float lastX = 9, lastZ = -13, y = 9.28f;
     private float blastX = 9, blastZ = -6;
     private float size = 5.001f;
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class CreateMap1 : MonoBehaviour
                 obj.transform.parent = gameObject.transform;
             }
 
-        for (int i = 0; i < 8; ++i)
+        for (int i = 0; i < 11; ++i)
         {
             GameObject obj;
             int b = Random.Range(1, 6);
@@ -626,7 +626,7 @@ public class CreateMap1 : MonoBehaviour
         lastX -= 2.5f;
         blastX += 2.5f;
         //bx
-        for (int i = 0; i < 34; ++i)
+        for (int i = 0; i < 37; ++i)
         {
             GameObject obj;
             int b = Random.Range(1, 6);
@@ -685,7 +685,7 @@ public class CreateMap1 : MonoBehaviour
             }
         }
         lastX -= 2.5f;
-        for (int i = 0; i < 14; ++i)
+        for (int i = 0; i < 26; ++i)
         {
             GameObject obj;
             int b = Random.Range(1, 6);
