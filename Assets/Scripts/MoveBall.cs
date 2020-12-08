@@ -13,6 +13,7 @@ public class MoveBall : MonoBehaviour
     public GameObject cambioExploisionPrefab;
     private Vector3 impulse = new Vector3(20.0f, 0.0f, 20.0f);
     private bool godMode = false;
+    public ParticleSystem die;
 
     // Start is called before the first frame update
     void Start()
@@ -51,9 +52,11 @@ public class MoveBall : MonoBehaviour
         {
             if(!godMode)
             {
+                die.Emit(42);
+                die.transform.parent = null;
                 Destroy(gameObject);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                Time.timeScale = 1;
+                //invocar esta funcion despues de 5s
+                
             }
 
         }
