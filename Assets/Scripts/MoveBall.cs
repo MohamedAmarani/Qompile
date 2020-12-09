@@ -17,6 +17,7 @@ public class MoveBall : MonoBehaviour
     public AudioClip wallSound;
     public AudioClip paddleSound;
     public AudioClip dieSound;
+    public GameObject barra;
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +55,7 @@ public class MoveBall : MonoBehaviour
         if (collision.gameObject.tag != "danger" && collision.gameObject.tag != "paddle")
             AudioSource.PlayClipAtPoint(wallSound, new Vector3(92f, 105f, -1f), 3.0f);
 
-        if(collision.gameObject.tag == "paddle")
+        if(collision.gameObject.tag == "paddle" || collision.gameObject.tag == "barra")
             AudioSource.PlayClipAtPoint(paddleSound, new Vector3(92f, 105f, -1f), 7.0f);
 
         if (collision.gameObject.tag == "danger")
@@ -69,6 +70,14 @@ public class MoveBall : MonoBehaviour
                 
             }
 
+        }
+
+        if (collision.gameObject.tag == "open")
+        {
+            Destroy(barra);
+            GameObject player = GameObject.Find("open");
+            if (player)
+                Destroy(player);
         }
     }
 

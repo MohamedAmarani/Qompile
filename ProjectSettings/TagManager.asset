@@ -6,6 +6,9 @@ TagManager:
   tags:
   - danger
   - paddle
+  - word
+  - barra
+  - open
   layers:
   - Default
   - TransparentFX
