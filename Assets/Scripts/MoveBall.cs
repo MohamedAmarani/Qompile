@@ -59,9 +59,9 @@ public class MoveBall : MonoBehaviour
 
         if (collision.gameObject.tag == "danger")
         {
-            if(!godMode)
+            AudioSource.PlayClipAtPoint(dieSound, new Vector3(92f, 105f, -1f), 3.0f);
+            if (!godMode)
             {
-                AudioSource.PlayClipAtPoint(dieSound, new Vector3(92f, 105f, -1f), 3.0f);
                 die.Emit(42);
                 die.transform.parent = null;
                 Destroy(gameObject);

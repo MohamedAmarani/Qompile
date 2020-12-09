@@ -19,7 +19,8 @@ public class paddle : MonoBehaviour
     {
         Vector3 direction = target.position - transform.position;
         Debug.Log("La direccion es" + direction.x);
-        if(Mathf.Abs(direction.x) < distance)
+
+        if (Mathf.Abs(direction.x) < distance)
         {
             direction.x = direction.y = 0;
             rb.velocity = direction.normalized * speed;
