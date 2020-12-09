@@ -79,6 +79,13 @@ public class MoveBall : MonoBehaviour
             if (player)
                 Destroy(player);
         }
+
+        if (collision.gameObject.tag == "end")
+        {
+            GameObject player = GameObject.Find("end");
+            if (player)
+                Destroy(player);
+        }
     }
 
     private enum HitDirection { None, Top, Bottom, Forward, Back, Left, Right }

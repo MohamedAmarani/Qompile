@@ -9,6 +9,7 @@ TagManager:
   - word
   - barra
   - open
+  - end
   layers:
   - Default
   - TransparentFX

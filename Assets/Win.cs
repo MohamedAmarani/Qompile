@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class PlayerDie : MonoBehaviour
+
+public class Win : MonoBehaviour
 {
-    //public string sceneName;
+    public string sceneName;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,17 +15,18 @@ public class PlayerDie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool encuentra = transform.Find("Ball");
-        //Debug.Log(encuentra);
-        if (encuentra == false)
+        GameObject flag= GameObject.Find("end");
+        if (flag == false)
         {
-            Invoke("VolverCarregaEscena", 5f);
+            Destroy(flag);
+            Invoke("CarregaEscena", 1f);
         }
+            
     }
 
-    public void VolverCarregaEscena()
+    public void CarregaEscena()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(sceneName);
         Time.timeScale = 1;
     }
 }
