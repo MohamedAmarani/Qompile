@@ -18,7 +18,7 @@ public class Win : MonoBehaviour
         GameObject flag= GameObject.Find("end");
         if (flag == false)
         {
-            Destroy(flag);
+            //Destroy(flag);
             Invoke("CarregaEscena", 1f);
         }
             
