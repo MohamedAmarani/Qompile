@@ -491,7 +491,7 @@ public class CreateMap1 : MonoBehaviour
         }
         blastZ += 2.5f;
         //by
-        for (int i = 0; i < 21; ++i)
+        for (int i = 0; i < 23; ++i)
         {
             GameObject obj;
             int b = Random.Range(1, 6);
