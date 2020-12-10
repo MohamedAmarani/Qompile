@@ -4823,7 +4823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48502eb8e9b979143a40c6d3b1805e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Escena6
 --- !u!4 &183029695
 Transform:
   m_ObjectHideFlags: 0
@@ -59241,6 +59240,8 @@ MonoBehaviour:
   wallSound: {fileID: 8300000, guid: b5158d3826b8af14e843fe17fd4fc129, type: 3}
   paddleSound: {fileID: 8300000, guid: 869cbaf26f6cf9447a41d097fef2adae, type: 3}
   dieSound: {fileID: 8300000, guid: b882e9ea89f9a094cb606a933aabbf80, type: 3}
+  flagound: {fileID: 8300000, guid: 873eff60b9347ad40abfd024cb29fba3, type: 3}
+  openSound: {fileID: 8300000, guid: 8c32c2775e85254429bbcb6ffebe4678, type: 3}
   barra: {fileID: 1937394656}
 --- !u!1 &3844846727609491745 stripped
 GameObject:
