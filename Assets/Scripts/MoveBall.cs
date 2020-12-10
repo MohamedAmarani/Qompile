@@ -94,6 +94,12 @@ public class MoveBall : MonoBehaviour
 
         else if (collision.gameObject.tag == "paddle" || collision.gameObject.tag == "barra")
             AudioSource.PlayClipAtPoint(paddleSound, new Vector3(92f, 105f, -1f), 7.0f);
+        else if(collision.gameObject.tag == "paddleSpecial")
+        {
+            AudioSource.PlayClipAtPoint(paddleSound, new Vector3(92f, 105f, -1f), 7.0f);
+            barra.SetActive(true);
+        }
+
 
         else
             AudioSource.PlayClipAtPoint(wallSound, new Vector3(92f, 105f, -1f), 3.0f);
