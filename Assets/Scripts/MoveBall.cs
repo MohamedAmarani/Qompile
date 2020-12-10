@@ -17,6 +17,8 @@ public class MoveBall : MonoBehaviour
     public AudioClip wallSound;
     public AudioClip paddleSound;
     public AudioClip dieSound;
+    public AudioClip flagound;
+    public AudioClip openSound;
     public GameObject barra;
 
     // Start is called before the first frame update
@@ -52,11 +54,6 @@ public class MoveBall : MonoBehaviour
         GameObject p = Instantiate(exploisionPrefab, gameObject.transform.position, Quaternion.identity);
         p.transform.localScale = new Vector3(20, 20, 20);
         Debug.Log(ReturnDirection(collision.gameObject, this.gameObject));
-        if (collision.gameObject.tag != "danger" && collision.gameObject.tag != "paddle")
-            AudioSource.PlayClipAtPoint(wallSound, new Vector3(92f, 105f, -1f), 3.0f);
-
-        if(collision.gameObject.tag == "paddle" || collision.gameObject.tag == "barra")
-            AudioSource.PlayClipAtPoint(paddleSound, new Vector3(92f, 105f, -1f), 7.0f);
 
         if (collision.gameObject.tag == "danger")
         {
@@ -67,25 +64,46 @@ public class MoveBall : MonoBehaviour
                 die.transform.parent = null;
                 Destroy(gameObject);
                 //invocar esta funcion despues de 5s
-                
+
             }
 
         }
 
-        if (collision.gameObject.tag == "open")
+        else if (collision.gameObject.tag == "end")
+        {
+            GameObject player = GameObject.Find("end");
+            if (player)
+            {
+                AudioSource.PlayClipAtPoint(flagound, new Vector3(92f, 105f, -1f), 7.0f);
+                Destroy(player);
+            }
+
+        }
+
+        else if (collision.gameObject.tag == "open")
         {
             Destroy(barra);
             GameObject player = GameObject.Find("open");
             if (player)
+            {
+                AudioSource.PlayClipAtPoint(openSound, new Vector3(92f, 105f, -1f), 7.0f);
                 Destroy(player);
+            }
+               
         }
 
-        if (collision.gameObject.tag == "end")
-        {
-            GameObject player = GameObject.Find("end");
-            if (player)
-                Destroy(player);
-        }
+        else if (collision.gameObject.tag == "paddle" || collision.gameObject.tag == "barra")
+            AudioSource.PlayClipAtPoint(paddleSound, new Vector3(92f, 105f, -1f), 7.0f);
+
+        else
+            AudioSource.PlayClipAtPoint(wallSound, new Vector3(92f, 105f, -1f), 3.0f);
+
+
+
+
+
+
+
     }
 
     private enum HitDirection { None, Top, Bottom, Forward, Back, Left, Right }
