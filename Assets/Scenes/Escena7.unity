@@ -589,9 +589,9 @@ GameObject:
   - component: {fileID: 1153049501}
   - component: {fileID: 1153049500}
   - component: {fileID: 1153049504}
-  - component: {fileID: 1153049503}
   - component: {fileID: 1153049505}
   - component: {fileID: 1153049506}
+  - component: {fileID: 1153049503}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -673,11 +673,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1153049499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec356ab5f9f35b24e98d7ef4e88617df, type: 3}
+  m_Script: {fileID: 11500000, guid: 21f645fc5fb5dfc40ac0a1145a27f519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1278786979}
-  smoothTime: 5
+  ball: {fileID: 1278786978}
 --- !u!114 &1153049504
 MonoBehaviour:
   m_ObjectHideFlags: 0
