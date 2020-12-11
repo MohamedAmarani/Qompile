@@ -106,8 +106,6 @@ public class MoveBall : MonoBehaviour
             AudioSource.PlayClipAtPoint(paddleSound, myCamera.transform.position, 7.0f);
             barra.SetActive(true);
         }
-
-
         else
             AudioSource.PlayClipAtPoint(wallSound, myCamera.transform.position, 3.0f);
 
