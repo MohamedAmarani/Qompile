@@ -14,9 +14,9 @@ public class PlayerDie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool encuentra = transform.Find("Ball");
-        //Debug.Log(encuentra);
-        if (encuentra == false)
+
+        GameObject encuentra = GameObject.Find("Ball");
+        if (!encuentra)
         {
             Invoke("VolverCarregaEscena", 5f);
         }

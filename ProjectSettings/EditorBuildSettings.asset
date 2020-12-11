@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escena8.unity
     guid: 583358fc8d3b3f040b1598b4922142f2
+  - enabled: 1
+    path: Assets/Scenes/Escena9.unity
+    guid: 88e58133a190c92428aec8e5f7017881
   m_configObjects: {}

@@ -55,7 +55,6 @@ public class MoveBall : MonoBehaviour
         GameObject p = Instantiate(exploisionPrefab, gameObject.transform.position, Quaternion.identity);
         p.transform.localScale = new Vector3(20, 20, 20);
         Debug.Log(ReturnDirection(collision.gameObject, this.gameObject));
-
         if (collision.gameObject.tag == "danger")
         {
             AudioSource.PlayClipAtPoint(dieSound, myCamera.transform.position, 3.0f);
