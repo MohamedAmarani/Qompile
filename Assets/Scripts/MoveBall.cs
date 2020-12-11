@@ -21,7 +21,6 @@ public class MoveBall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // GetComponent<Rigidbody>().AddForce(impulse, ForceMode.Impulse);
         GetComponent<Rigidbody>().velocity = new Vector3(20, 0, 20);
     }
 
@@ -29,6 +28,14 @@ public class MoveBall : MonoBehaviour
     void FixedUpdate()
     {
         GetComponent<Rigidbody>().velocity = new Vector3(xSpeed, 0, zSpeed);
+        /*if (Input.GetKey(KeyCode.UpArrow))
+            transform.Translate(0, 1, 0);
+        if (Input.GetKey(KeyCode.DownArrow))
+            transform.Translate(0, -1, 0);
+        if (Input.GetKey(KeyCode.LeftArrow))
+            transform.Translate(-1, 0, 0);
+        if (Input.GetKey(KeyCode.RightArrow))
+            transform.Translate(1, 0, 0);*/
 
         if (Input.GetKey(KeyCode.Space) && !pressedSpace)
           {

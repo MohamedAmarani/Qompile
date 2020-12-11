@@ -19,7 +19,7 @@ public class CreateMap2 : MonoBehaviour
         //creating map
         //crear suelo
         for (int i = -70; i < 130; ++i)
-            for (int j = 0; j < 70; ++j)
+            for (int j = -20; j < 40; ++j)
             {
                 GameObject obj = (GameObject)Instantiate(groundCube, new Vector3(i * 5.0f, 8.0f, -230 + j * 8.7f), Quaternion.Euler(90.0f, -90.0f, -180.0f));
                 obj.transform.parent = gameObject.transform;
