@@ -20,6 +20,7 @@ public class MoveBall : MonoBehaviour
     public AudioClip flagound;
     public AudioClip openSound;
     public GameObject barra;
+    public Camera myCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +58,7 @@ public class MoveBall : MonoBehaviour
 
         if (collision.gameObject.tag == "danger")
         {
-            AudioSource.PlayClipAtPoint(dieSound, new Vector3(92f, 105f, -1f), 3.0f);
+            AudioSource.PlayClipAtPoint(dieSound, myCamera.transform.position, 3.0f);
             if (!godMode)
             {
                 die.Emit(42);
@@ -74,7 +75,7 @@ public class MoveBall : MonoBehaviour
             GameObject player = GameObject.Find("end");
             if (player)
             {
-                AudioSource.PlayClipAtPoint(flagound, new Vector3(92f, 105f, -1f), 7.0f);
+                AudioSource.PlayClipAtPoint(flagound, myCamera.transform.position, 7.0f);
                 Destroy(player);
             }
 
@@ -86,23 +87,23 @@ public class MoveBall : MonoBehaviour
             GameObject player = GameObject.Find("open");
             if (player)
             {
-                AudioSource.PlayClipAtPoint(openSound, new Vector3(92f, 105f, -1f), 7.0f);
+                AudioSource.PlayClipAtPoint(openSound, myCamera.transform.position, 7.0f);
                 Destroy(player);
             }
                
         }
 
         else if (collision.gameObject.tag == "paddle" || collision.gameObject.tag == "barra")
-            AudioSource.PlayClipAtPoint(paddleSound, new Vector3(92f, 105f, -1f), 7.0f);
+            AudioSource.PlayClipAtPoint(paddleSound, myCamera.transform.position, 7.0f);
         else if(collision.gameObject.tag == "paddleSpecial")
         {
-            AudioSource.PlayClipAtPoint(paddleSound, new Vector3(92f, 105f, -1f), 7.0f);
+            AudioSource.PlayClipAtPoint(paddleSound, myCamera.transform.position, 7.0f);
             barra.SetActive(true);
         }
 
 
         else
-            AudioSource.PlayClipAtPoint(wallSound, new Vector3(92f, 105f, -1f), 3.0f);
+            AudioSource.PlayClipAtPoint(wallSound, myCamera.transform.position, 3.0f);
 
 
 

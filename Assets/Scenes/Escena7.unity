@@ -893,6 +893,7 @@ MonoBehaviour:
   flagound: {fileID: 8300000, guid: 873eff60b9347ad40abfd024cb29fba3, type: 3}
   openSound: {fileID: 8300000, guid: 8c32c2775e85254429bbcb6ffebe4678, type: 3}
   barra: {fileID: 1637862722}
+  myCamera: {fileID: 1153049501}
 --- !u!65 &1278786981
 BoxCollider:
   m_ObjectHideFlags: 0
