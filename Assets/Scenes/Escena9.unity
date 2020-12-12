@@ -6358,6 +6358,7 @@ GameObject:
   - component: {fileID: 1335990935}
   - component: {fileID: 1335990934}
   - component: {fileID: 1335990940}
+  - component: {fileID: 1335990941}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6483,6 +6484,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Escena10
+--- !u!114 &1335990941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335990933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d29c4723f760cd45bbbe1049bf6f145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 52226785}
 --- !u!4 &1405316081 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 13284768417369253, guid: 5c14a239ebe840d4388acfc0852bbeb5,
