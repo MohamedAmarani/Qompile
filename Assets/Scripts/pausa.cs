@@ -8,6 +8,7 @@ public class pausa : MonoBehaviour
 {
     public GameObject pauseMenu;
     public AudioClip buttonSound;
+    public Camera myCamera;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,7 @@ public class pausa : MonoBehaviour
 
     public void Button()
     {
-        AudioSource.PlayClipAtPoint(buttonSound, new Vector3(92f, 105f, -1f));
+        AudioSource.PlayClipAtPoint(buttonSound, myCamera.transform.position);
     }
 
 }
