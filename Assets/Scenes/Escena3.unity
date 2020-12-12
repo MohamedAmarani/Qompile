@@ -3243,11 +3243,11 @@ GameObject:
   - component: {fileID: 123973239}
   - component: {fileID: 123973235}
   - component: {fileID: 123973234}
-  - component: {fileID: 123973237}
   - component: {fileID: 123973236}
   - component: {fileID: 123973238}
   - component: {fileID: 123973240}
   - component: {fileID: 123973241}
+  - component: {fileID: 123973237}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3342,25 +3342,20 @@ MonoBehaviour:
   pauseMenu: {fileID: 498552732}
   buttonSound: {fileID: 8300000, guid: 809d07306f64c4b4993b0bb41b313a37, type: 3}
   myCamera: {fileID: 123973235}
---- !u!224 &123973239
-RectTransform:
+--- !u!4 &123973239
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123973233}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 97.1, y: 12, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 92, y: 105}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &123973240
 MonoBehaviour:
   m_ObjectHideFlags: 0
