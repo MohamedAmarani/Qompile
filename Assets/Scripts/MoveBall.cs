@@ -51,9 +51,9 @@ public class MoveBall : MonoBehaviour
           else if (!Input.GetKey(KeyCode.Space))
             pressedSpace = false;
 
-        if (Input.GetKeyDown(KeyCode.G) && !godMode)
+        if (Input.GetKeyDown(KeyCode.G))
         {
-            godMode = true;
+            godMode = !godMode;
         }
     }
 
