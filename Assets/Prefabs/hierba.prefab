@@ -150,6 +150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5287296359136621982}
+  - component: {fileID: 3269626890887344352}
   m_Layer: 0
   m_Name: hierba
   m_TagString: Untagged
@@ -173,6 +174,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3269626890887344352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4768063694183444260}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 43.339153, y: 76.24402, z: 42.362053}
+  m_Center: {x: -1.1941934, y: 34.848667, z: 79.666885}
 --- !u!1 &4888748603862507119
 GameObject:
   m_ObjectHideFlags: 0

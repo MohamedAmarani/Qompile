@@ -7655,7 +7655,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412887653}
-  - component: {fileID: 412887654}
   m_Layer: 0
   m_Name: grass(Clone) (3)
   m_TagString: paddle
@@ -7678,19 +7677,6 @@ Transform:
   m_Father: {fileID: 2048967239}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &412887654
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 412887652}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 43, y: 46, z: 54}
-  m_Center: {x: 20, y: 20, z: 62}
 --- !u!1 &413717210
 GameObject:
   m_ObjectHideFlags: 0
@@ -8546,7 +8532,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 455308941}
-  - component: {fileID: 455308942}
   m_Layer: 0
   m_Name: grass(Clone) (4)
   m_TagString: paddle
@@ -8569,19 +8554,6 @@ Transform:
   m_Father: {fileID: 2048967239}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &455308942
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455308940}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 43, y: 46, z: 54}
-  m_Center: {x: 20, y: 20, z: 62}
 --- !u!1 &455448469
 GameObject:
   m_ObjectHideFlags: 0
@@ -9422,7 +9394,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 482300832}
-  - component: {fileID: 482300833}
   m_Layer: 0
   m_Name: grass(Clone) (7)
   m_TagString: paddle
@@ -9445,19 +9416,6 @@ Transform:
   m_Father: {fileID: 2048967239}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &482300833
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482300831}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 43, y: 46, z: 54}
-  m_Center: {x: 20, y: 20, z: 62}
 --- !u!1 &484728441
 GameObject:
   m_ObjectHideFlags: 0
@@ -9639,7 +9597,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 491168920}
-  - component: {fileID: 491168921}
   m_Layer: 0
   m_Name: grass(Clone) (6)
   m_TagString: paddle
@@ -9662,19 +9619,6 @@ Transform:
   m_Father: {fileID: 2048967239}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &491168921
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491168919}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 43, y: 46, z: 54}
-  m_Center: {x: 20, y: 20, z: 62}
 --- !u!1 &498009826
 GameObject:
   m_ObjectHideFlags: 0
@@ -17584,7 +17528,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 859999294}
-  - component: {fileID: 859999295}
   m_Layer: 0
   m_Name: grass(Clone) (2)
   m_TagString: paddle
@@ -17607,19 +17550,6 @@ Transform:
   m_Father: {fileID: 2048967239}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &859999295
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 859999293}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 43, y: 46, z: 54}
-  m_Center: {x: 20, y: 20, z: 62}
 --- !u!1 &861263938
 GameObject:
   m_ObjectHideFlags: 0
@@ -24265,7 +24195,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1196161083}
-  - component: {fileID: 1196161084}
   m_Layer: 0
   m_Name: grass(Clone) (5)
   m_TagString: paddle
@@ -24288,19 +24217,6 @@ Transform:
   m_Father: {fileID: 2048967239}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1196161084
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196161082}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 43, y: 46, z: 54}
-  m_Center: {x: 20, y: 20, z: 62}
 --- !u!1 &1197428430
 GameObject:
   m_ObjectHideFlags: 0
@@ -29623,7 +29539,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1448459651}
-  - component: {fileID: 1448459652}
   m_Layer: 0
   m_Name: grass(Clone) (1)
   m_TagString: paddle
@@ -29646,19 +29561,6 @@ Transform:
   m_Father: {fileID: 2048967239}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1448459652
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448459650}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 43, y: 46, z: 54}
-  m_Center: {x: 20, y: 20, z: 62}
 --- !u!1 &1449767061
 GameObject:
   m_ObjectHideFlags: 0
@@ -42438,7 +42340,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1938077216}
-  - component: {fileID: 1938077217}
   m_Layer: 0
   m_Name: grass(Clone)
   m_TagString: paddle
@@ -42461,19 +42362,6 @@ Transform:
   m_Father: {fileID: 2048967239}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1938077217
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938077215}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 43, y: 46, z: 54}
-  m_Center: {x: 20, y: 20, z: 62}
 --- !u!1001 &1941290386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44675,7 +44563,7 @@ BoxCollider:
   m_GameObject: {fileID: 2068633663}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 43, y: 46, z: 54}
   m_Center: {x: 20, y: 20, z: 62}
@@ -45857,7 +45745,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 599441e8b6919ab459b070ea0efabcf4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d384bc7a24625a54f9c1b9c1a20a8c32, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.15
   m_Pitch: 1
