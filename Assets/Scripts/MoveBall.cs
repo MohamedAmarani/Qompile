@@ -11,6 +11,7 @@ public class MoveBall : MonoBehaviour
     private int change = -1;
     public GameObject exploisionPrefab;
     public GameObject cambioExploisionPrefab;
+    public GameObject choquePrefab;
     private Vector3 impulse = new Vector3(20.0f, 0.0f, 20.0f);
     private bool godMode = false;
     public ParticleSystem die;
@@ -21,6 +22,11 @@ public class MoveBall : MonoBehaviour
     public AudioClip openSound;
     public GameObject barra;
     public Camera myCamera;
+    private float timeToDie = 2000000.0f;
+    private bool baja = false;
+    private Vector3 previo;
+    private int count = 0;
+    private bool primero = false;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +47,27 @@ public class MoveBall : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
             transform.Translate(1, 0, 0);*/
 
+        if (baja)
+        {
+            gameObject.GetComponent<TrailRenderer>().emitting = true;
+            ++count;
+            if ((primero && count >= 30) || (!primero && count >= 15))
+            {
+                primero = false;
+                GameObject pe;
+                pe = Instantiate(choquePrefab, previo, Quaternion.identity);
+                pe.GetComponent<MeshRenderer>().enabled = false;
+                count = 0;
+            }
+        }
+        else
+            gameObject.GetComponent<TrailRenderer>().emitting = false;
+
+        if (count == 5)
+        {
+            previo = transform.position;
+        }
+
         if (Input.GetKey(KeyCode.Space) && !pressedSpace)
           {
             pressedSpace = true;
@@ -57,10 +84,20 @@ public class MoveBall : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnParticleCollision(GameObject Other)
     {
+            Destroy(gameObject);
+
+
+        }
+
+
+        void OnCollisionEnter(Collision collision)
+    {
+
         GameObject p = Instantiate(exploisionPrefab, gameObject.transform.position, Quaternion.identity);
         p.transform.localScale = new Vector3(20, 20, 20);
+
         Debug.Log(ReturnDirection(collision.gameObject, this.gameObject));
         if (collision.gameObject.tag == "danger")
         {
@@ -109,11 +146,21 @@ public class MoveBall : MonoBehaviour
         else
             AudioSource.PlayClipAtPoint(wallSound, myCamera.transform.position, 3.0f);
 
+        if (collision.collider.gameObject.name == "choque")
+        {
+            primero = true;
+            baja = true;
+        }
 
+        if (collision.collider.gameObject.name == "ChoqueSave")
+        {
+            baja = false;
+        }
 
-
-
-
+        if (collision.collider.gameObject.name == "bricksInsPartes 3 1(Clone)")
+        {
+            Destroy(gameObject);
+        }
 
     }
 
