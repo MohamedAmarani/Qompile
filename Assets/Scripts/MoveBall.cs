@@ -51,7 +51,7 @@ public class MoveBall : MonoBehaviour
         {
             gameObject.GetComponent<TrailRenderer>().emitting = true;
             ++count;
-            if ((primero && count >= 30) || (!primero && count >= 15))
+            if ((primero && count >= 30) || (!primero && count >= 12))
             {
                 primero = false;
                 GameObject pe;
