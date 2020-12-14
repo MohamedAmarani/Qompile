@@ -4683,6 +4683,7 @@ GameObject:
   - component: {fileID: 2073776704589017428}
   - component: {fileID: 6853032670253977858}
   - component: {fileID: 4072074379439600839}
+  - component: {fileID: 4061460482405698432}
   m_Layer: 0
   m_Name: PlasmaExplosionEffect
   m_TagString: Untagged
@@ -9352,6 +9353,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &4061460482405698432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437804934907478335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f58c44946e78e4fa8fae0c9370fd8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDie: 2
 --- !u!1 &3394409326226817253
 GameObject:
   m_ObjectHideFlags: 0

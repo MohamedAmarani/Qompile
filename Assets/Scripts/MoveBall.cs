@@ -155,11 +155,21 @@ public class MoveBall : MonoBehaviour
         if (collision.collider.gameObject.name == "ChoqueSave")
         {
             baja = false;
+
         }
 
         if (collision.collider.gameObject.name == "bricksInsPartes 3 1(Clone)")
         {
-            Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(dieSound, myCamera.transform.position, 3.0f);
+            if (!godMode)
+            {
+                die.Emit(42);
+                die.transform.parent = null;
+                Destroy(gameObject);
+                //invocar esta funcion despues de 5s
+
+            }
+            //Destroy(gameObject);
         }
 
     }
