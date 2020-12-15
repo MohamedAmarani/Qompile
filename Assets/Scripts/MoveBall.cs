@@ -139,7 +139,7 @@ public class MoveBall : MonoBehaviour
             GameObject player = GameObject.Find("end");
             if (player)
             {
-                AudioSource.PlayClipAtPoint(flagound, myCamera.transform.position, 7.0f);
+                AudioSource.PlayClipAtPoint(flagound, myCamera.transform.position, 5.0f);
                 Destroy(player);
             }
 
@@ -151,7 +151,7 @@ public class MoveBall : MonoBehaviour
             GameObject player = GameObject.Find("open");
             if (player)
             {
-                AudioSource.PlayClipAtPoint(openSound, myCamera.transform.position, 7.0f);
+                AudioSource.PlayClipAtPoint(openSound, myCamera.transform.position, 5.0f);
                 Destroy(player);
             }
                
