@@ -122,7 +122,7 @@ public class MoveBall : MonoBehaviour
 
         if (collision.gameObject.tag == "danger")
         {
-            AudioSource.PlayClipAtPoint(dieSound, myCamera.transform.position, 3.0f);
+            AudioSource.PlayClipAtPoint(dieSound, myCamera.transform.position, 0.5f);
             if (!godMode)
             {
                 die.Emit(42);
@@ -165,7 +165,7 @@ public class MoveBall : MonoBehaviour
             barra.SetActive(true);
         }
         else
-            AudioSource.PlayClipAtPoint(wallSound, myCamera.transform.position, 3.0f);
+            AudioSource.PlayClipAtPoint(wallSound, myCamera.transform.position, 0.2f);
 
         if (collision.collider.gameObject.name == "choque")
         {
@@ -181,7 +181,7 @@ public class MoveBall : MonoBehaviour
 
         if (collision.collider.gameObject.name == "bricksInsPartes 3 1(Clone)")
         {
-            AudioSource.PlayClipAtPoint(dieSound, myCamera.transform.position, 3.0f);
+            AudioSource.PlayClipAtPoint(dieSound, myCamera.transform.position, 0.5f);
             if (!godMode)
             {
                 die.Emit(42);
