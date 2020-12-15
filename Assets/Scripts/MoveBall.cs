@@ -28,6 +28,7 @@ public class MoveBall : MonoBehaviour
     private int count = 0;
     private bool primero = false;
     private bool transporting = false;
+    public GameObject godModeWord;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,14 @@ public class MoveBall : MonoBehaviour
     }
 
     // Update is called once per frame
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            godMode = !godMode;
+            godModeWord.SetActive(godMode);
+        }
+    }
     void FixedUpdate()
     {
         if (!transporting)
@@ -81,10 +90,11 @@ public class MoveBall : MonoBehaviour
             else if (!Input.GetKey(KeyCode.Space))
                 pressedSpace = false;
 
-            if (Input.GetKeyDown(KeyCode.G))
+           /* if (Input.GetKeyDown(KeyCode.G))
             {
                 godMode = !godMode;
-            }
+                godModeWord.SetActive(godMode);
+            }*/
         }
         else
         {
@@ -183,7 +193,7 @@ public class MoveBall : MonoBehaviour
             //Destroy(gameObject);
         }
 
-        if (collision.collider.gameObject.name == "bricksInsPartes 12")
+        if (collision.gameObject.tag == "mecanica3")
         {
             transporting = true;
         }

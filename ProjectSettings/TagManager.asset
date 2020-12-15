@@ -11,6 +11,7 @@ TagManager:
   - open
   - end
   - paddleSpecial
+  - mecanica3
   layers:
   - Default
   - TransparentFX
