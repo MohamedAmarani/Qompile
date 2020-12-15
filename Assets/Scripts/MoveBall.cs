@@ -27,6 +27,7 @@ public class MoveBall : MonoBehaviour
     private Vector3 previo;
     private int count = 0;
     private bool primero = false;
+    private bool transporting = false;
 
     // Start is called before the first frame update
     void Start()
@@ -37,50 +38,58 @@ public class MoveBall : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        GetComponent<Rigidbody>().velocity = new Vector3(xSpeed, 0, zSpeed);
-        /*if (Input.GetKey(KeyCode.UpArrow))
-            transform.Translate(0, 1, 0);
-        if (Input.GetKey(KeyCode.DownArrow))
-            transform.Translate(0, -1, 0);
-        if (Input.GetKey(KeyCode.LeftArrow))
-            transform.Translate(-1, 0, 0);
-        if (Input.GetKey(KeyCode.RightArrow))
-            transform.Translate(1, 0, 0);*/
-
-        if (baja)
+        if (!transporting)
         {
-            gameObject.GetComponent<TrailRenderer>().emitting = true;
-            ++count;
-            if ((primero && count >= 30) || (!primero && count >= 12))
+            GetComponent<Rigidbody>().velocity = new Vector3(xSpeed, 0, zSpeed);
+            /*if (Input.GetKey(KeyCode.UpArrow))
+                transform.Translate(0, 1, 0);
+            if (Input.GetKey(KeyCode.DownArrow))
+                transform.Translate(0, -1, 0);
+            if (Input.GetKey(KeyCode.LeftArrow))
+                transform.Translate(-1, 0, 0);
+            if (Input.GetKey(KeyCode.RightArrow))
+                transform.Translate(1, 0, 0);*/
+
+            if (baja)
             {
-                primero = false;
-                GameObject pe;
-                pe = Instantiate(choquePrefab, previo, Quaternion.identity);
-                pe.GetComponent<MeshRenderer>().enabled = false;
-                count = 0;
+                gameObject.GetComponent<TrailRenderer>().emitting = true;
+                ++count;
+                if ((primero && count >= 30) || (!primero && count >= 12))
+                {
+                    primero = false;
+                    GameObject pe;
+                    pe = Instantiate(choquePrefab, previo, Quaternion.identity);
+                    pe.GetComponent<MeshRenderer>().enabled = false;
+                    count = 0;
+                }
+            }
+            else
+                gameObject.GetComponent<TrailRenderer>().emitting = false;
+
+            if (count == 5)
+            {
+                previo = transform.position;
+            }
+
+            if (Input.GetKey(KeyCode.Space) && !pressedSpace)
+            {
+                pressedSpace = true;
+                print("space");
+                zSpeed *= (-1);
+                GameObject p = Instantiate(cambioExploisionPrefab, gameObject.transform.position, Quaternion.identity);
+            }
+            else if (!Input.GetKey(KeyCode.Space))
+                pressedSpace = false;
+
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                godMode = !godMode;
             }
         }
         else
-            gameObject.GetComponent<TrailRenderer>().emitting = false;
-
-        if (count == 5)
         {
-            previo = transform.position;
-        }
-
-        if (Input.GetKey(KeyCode.Space) && !pressedSpace)
-          {
-            pressedSpace = true;
-            print("space");
-            zSpeed *= (-1);
-            GameObject p = Instantiate(cambioExploisionPrefab, gameObject.transform.position, Quaternion.identity);
-        }
-          else if (!Input.GetKey(KeyCode.Space))
-            pressedSpace = false;
-
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            godMode = !godMode;
+            GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            transform.Translate(1, 0, 0);
         }
     }
 
@@ -98,7 +107,9 @@ public class MoveBall : MonoBehaviour
         GameObject p = Instantiate(exploisionPrefab, gameObject.transform.position, Quaternion.identity);
         p.transform.localScale = new Vector3(20, 20, 20);
 
-        Debug.Log(ReturnDirection(collision.gameObject, this.gameObject));
+        if (collision.collider.gameObject.name != "bricksInsPartes 12")
+            Debug.Log(ReturnDirection(collision.gameObject, this.gameObject));
+
         if (collision.gameObject.tag == "danger")
         {
             AudioSource.PlayClipAtPoint(dieSound, myCamera.transform.position, 3.0f);
@@ -171,6 +182,13 @@ public class MoveBall : MonoBehaviour
             }
             //Destroy(gameObject);
         }
+
+        if (collision.collider.gameObject.name == "bricksInsPartes 12")
+        {
+            transporting = true;
+        }
+        else
+            transporting = false;
 
     }
 
